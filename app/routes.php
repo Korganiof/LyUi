@@ -25,7 +25,7 @@ Route::get('/',function(){
        ->with('title',$title);
 });
 
-Route::get('ishallinta', function(){
+Route::get('päähallinta', function(){
    return View::make('accounts.index');
 });
 
