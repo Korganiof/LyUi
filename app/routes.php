@@ -19,13 +19,11 @@
 
 Route::controller('/account', 'AccountController');
 
-
-
-Route::get('/accounts', function(){
-   return view::make('index');
-});
-
 Route::get('/',function(){
    return View::make('layouts.master');
+});
+
+Route::get('ishallinta', function(){
+   return View::make('accounts.index');
 });
 

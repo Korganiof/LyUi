@@ -25,8 +25,6 @@ echo 'Täältä kirjaudutaan ulos';
         echo $name;
     }
 
-    public function get_accounts(){
-        return View::make('/accounts/index');
-    }
+
 
 } 
