@@ -3,7 +3,7 @@
     <head>
         <title>
             @section('title')
-            Laravel 4 - Tutorial
+            Everon
             @show
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,19 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#">Laravel</a>
+                    <a class="navbar-brand" href="#">Everon</a>
                 </div>
                 <!-- Everything you want hidden at 940px or less, place within here -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{{ URL::to('') }}}">Home</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Pääsivu</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Isännän Hallinta</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Sijainnin Hallinta</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Laitehallinta Hallinta</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Toimijoiden Hallinta</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Hälytysten Hallinta</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Lokit ja raportit</a></li>
+                        <li><a href="{{{ URL::to('') }}}">Kirjaudu ulos</a></li>
                     </ul> 
                 </div>
             </div>
@@ -50,7 +57,18 @@
 
             <!-- Content -->
             @yield('content')
-
+            <div class="col-lg-6">
+            <table class="table">
+              <tr>
+              <td>Test1</td>
+              <td>Test2</td>
+              </tr>
+              <tr>
+              <td>Test3</td>
+              <td>Test4</td>
+              </tr>
+            </table>
+            </div>
         </div>
 
         <!-- Scripts are placed here -->
