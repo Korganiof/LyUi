@@ -3,7 +3,7 @@
     <head>
         <title>
             @section('title')
-            Everon
+            {{ $title }}
             @show
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
                 <!-- Everything you want hidden at 940px or less, place within here -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{{ URL::to('') }}}">Pääsivu</a></li>
+                        <li><a href="{{{ URL::to('ishallinta') }}}">Pääsivu</a></li>
                         <li><a href="{{{ URL::to('') }}}">Isännän Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Sijainnin Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Laitehallinta Hallinta</a></li>
@@ -58,16 +58,9 @@
             <!-- Content -->
             @yield('content')
             <div class="col-lg-6">
-            <table class="table">
-              <tr>
-              <td>Test1</td>
-              <td>Test2</td>
-              </tr>
-              <tr>
-              <td>Test3</td>
-              <td>Test4</td>
-              </tr>
-            </table>
+
+
+
             </div>
         </div>
 

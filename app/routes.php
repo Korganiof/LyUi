@@ -20,7 +20,9 @@
 Route::controller('/account', 'AccountController');
 
 Route::get('/',function(){
-   return View::make('layouts.master');
+    $title = "Everon";
+   return View::make('layouts.master')
+       ->with('title',$title);
 });
 
 Route::get('ishallinta', function(){
