@@ -11,13 +11,21 @@
 |
 */
 
-Route::get('/', function()
+/*Route::get('/', function()
 {
 	return View::make('hello');
 });
-
+*/
 
 Route::controller('/account', 'AccountController');
 
 
+
+Route::get('/accounts', function(){
+   return view::make('index');
+});
+
+Route::get('/',function(){
+   return View::make('layouts.master');
+});
 

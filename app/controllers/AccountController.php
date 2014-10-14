@@ -14,8 +14,8 @@ public function get_index(){
 return "fff";
 }
 
-public function action_login(){
-echo 'tässä kirjaudutaan sisälle';
+public function get_login(){
+return 'tässä kirjaudutaan sisälle';
 }
 
 public function action_logout(){
@@ -23,6 +23,10 @@ echo 'Täältä kirjaudutaan ulos';
 }
     public function get_name($name){
         echo $name;
+    }
+
+    public function get_accounts(){
+        return View::make('/accounts/index');
     }
 
 } 
