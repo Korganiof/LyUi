@@ -22,7 +22,29 @@ class HomeController extends BaseController {
 
     public function doLogin()
     {
-        //form processing
+        $rules = array(
+            'email' => 'required|email', // varmistaa että sähköposti on oikeasti sähköposti
+            'password' => 'required|alphaNum|min:3' //varmistaa, että aplhanumeerinen sekä enemmän kuin 3 merkkiä
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails()){
+            return Redirect::to('login')
+                ->withErrors($validator)
+                ->withInput(Input::except('password'));
+        }else{
+            $userdata = array(
+                'email' => Input::get('email'),
+                'password' => Input::get('password')
+            );
+        }
+        if(Auth::attempt($userdata)){
+            return Redirect::to('/');
+        }else{
+            return Redirect::to('login');
+        }
+
     }
 
 }
