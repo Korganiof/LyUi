@@ -46,7 +46,8 @@
                         <li><a href="{{{ URL::to('') }}}">Toimijoiden Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Hälytysten Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Lokit ja raportit</a></li>
-                        <li><a href="{{{ URL::to('') }}}">Kirjaudu ulos</a></li>
+                        <li><a href="{{{ URL::to('logout') }}}">Kirjaudu ulos</a></li>
+
                     </ul> 
                 </div>
             </div>
