@@ -9,14 +9,36 @@
 
 <!doctype html>
 
-<html>
+ <html>
 
-<head>
-         <title>Kirjautuminen</title>
-</head>
-<body>
+            <head>
+         <title>Eteneminen</title>
+            </head>
+        <body>
 
+{{Form::open(array('url'=>'login')) }}
 
-</body>
+<h1>Kirjautuminen</h1>
 
+<!-- Errorit jotka tulevat loginnissä tähän -->
+
+<p>
+{{$errors ->first('email') }}
+{{$errors ->first('password') }}
+</p>
+
+<p>
+{{Form::label('email', 'Email Address') }}
+{{Form::text('email', Input::old('email'), array('placeholder' => 'example@gmail.com')) }}
+</p>
+
+<p>
+{{ Form::label('password', 'Password') }}
+{{Form::password('password') }}
+</p>
+
+<p>{{Form::submit('Submit!')}}</p>
+
+{{Form::close() }}
+       </body>
 </html>

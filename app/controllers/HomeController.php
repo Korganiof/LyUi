@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showLogin()
 	{
-		return View::make('login');
+		return View::make('login.login');
 	}
 
     public function doLogin()
