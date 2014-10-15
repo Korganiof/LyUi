@@ -29,3 +29,7 @@ Route::get('päähallinta', function(){
    return View::make('accounts.index');
 });
 
+Route::get('login', array('uses' => 'HomeController@showLogi'));
+
+Route::post('login', array('uses' => 'HomeController@doLogin'));
+

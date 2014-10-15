@@ -39,7 +39,7 @@
                 <!-- Everything you want hidden at 940px or less, place within here -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{{ URL::to('ishallinta') }}}">Pääsivu</a></li>
+                        <li><a href="{{{ URL::to('päähallinta') }}}">Pääsivu</a></li>
                         <li><a href="{{{ URL::to('') }}}">Isännän Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Sijainnin Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Laitehallinta Hallinta</a></li>
