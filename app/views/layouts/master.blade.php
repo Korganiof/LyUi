@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="{{{ URL::to('päähallinta') }}}">Pääsivu</a></li>
-                        <li><a href="{{{ URL::to('') }}}">Isännän Hallinta</a></li>
+                        <li><a href="{{{ URL::route('sivuhallinta') }}}">Sivuhallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Sijainnin Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Laitehallinta Hallinta</a></li>
                         <li><a href="{{{ URL::to('') }}}">Toimijoiden Hallinta</a></li>
