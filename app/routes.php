@@ -17,7 +17,6 @@
 });
 */
 
-Route::controller('/account', 'AccountController');
 
 Route::get('/',function(){
     $title = "Everon";
@@ -28,6 +27,11 @@ Route::get('/',function(){
 Route::get('päähallinta', function(){
    return View::make('accounts.index');
 });
+
+Route::get('sivuhallinta', array('as' => 'sivuhallinta', function()
+{
+    return View::make('sivuhallinta.sivuhallinta');
+}));
 
 Route::get('login', array('uses' => 'HomeController@showLogin'));
 Route::post('login', array('uses' => 'HomeController@doLogin'));
