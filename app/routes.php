@@ -46,8 +46,7 @@ Route::get('blog/{category?}', function($category = null){
     return View::make('blog')
         ->with('posts',$posts);
 });
-
-Route::group(array('prefix' => 'admin'), function(){
+Route::group(array('prefix' => 'admin', 'before' => 'auth'), function(){
    Route::get('dashboard', function(){
        return View::make('admin.dashboard');
 
@@ -59,7 +58,15 @@ Route::get('posts', function(){
 });
 
 Route::get('posts/create', function(){
-   return View::make('admin/posts-create');
+   return View::make('admin.posts-create');
 
 });
+
+App::missing(function($exception){
+return Response::view('error.error', array(),404);
+});
+
+
+
+
 
