@@ -77,6 +77,10 @@ switch($code)
 }
 });
 
+Route::get('yo', function(){
+    return View::make ('yo');
+});
+
 
 
 
