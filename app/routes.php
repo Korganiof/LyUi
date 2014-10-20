@@ -10,16 +10,8 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-/*Route::get('/', function()
-{
-	return View::make('hello');
-});
-*/
-
-
 Route::get('/',function(){
-    $title = "Everon";
+    $title = "Rahan hallinta";
    return View::make('layouts.master')
        ->with('title',$title);
 });
@@ -79,6 +71,17 @@ switch($code)
 
 Route::get('yo', function(){
     return View::make ('yo');
+});
+
+Route::get('puppies/{cutelevel}', function($cutelevel){
+    return 'this puppy is an absolute ' . $cutelevel . ' out of ' . $cutelevel;
+});
+
+Route::get('gallery/{category?}', function($category){
+   if($category)
+       return 'this is the ' . $category . ' section';
+    else
+        return 'these are all the photos.';
 });
 
 
