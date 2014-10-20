@@ -58,11 +58,23 @@
 
             <!-- Content -->
             @yield('content')
-            <div class="col-lg-6">
+            <div class="col-md-6">
+            <h2>Your recent workouts:</h2>
 
+            <table class ="table">
+            <tr>
+            <td>Chest</td>
+            <td>Back</td>
+            <td>Shoulders</td>
+            <td>Legs</td>
+            </tr>
 
+            </table>
 
             </div>
+            <div class="col-lg-6">
+            <h2> Your money spendage as follows:</h2>
+
         </div>
 
         <!-- Scripts are placed here -->
