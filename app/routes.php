@@ -73,16 +73,10 @@ Route::get('yo', function(){
     return View::make ('yo');
 });
 
-Route::get('puppies/{cutelevel}', function($cutelevel){
-    return 'this puppy is an absolute ' . $cutelevel . ' out of ' . $cutelevel;
+Route::get('Testiview', function(){
+    return View::make ('yo');
 });
 
-Route::get('gallery/{category?}', function($category){
-   if($category)
-       return 'this is the ' . $category . ' section';
-    else
-        return 'these are all the photos.';
-});
 
 
 
